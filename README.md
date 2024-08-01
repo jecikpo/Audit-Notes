@@ -14,8 +14,14 @@ Some notes on web3 audits
 - [Fuel VM Binary analysis](https://jtriley.substack.com/p/fuel-vm-binary-analysis) by jtriley.eth
 - [Fuel Virtual Machine Architecture](https://substack.com/home/post/p-83088192) by jtriley.eth
 
+## Tools
+
+- [Fuel Explorer](https://app.fuel.network/)
+- [Fuel Bridge](https://app.fuel.network/bridge?from=eth&to=fuel)
+- [Testnet Faucet](https://faucet-testnet.fuel.network/)
+
 ## JecikPo's tutorials
 
-- Step-by-step tutorial on how to create a simple SRC20 smart contract with some Rust tests.
-[SRC20 Tutorial](https://github.com/jecikpo/Tutorial-Fuel-SRC20)
+- [SRC20 Tutorial](https://github.com/jecikpo/Tutorial-Fuel-SRC20) - Step-by-step tutorial on how to create a simple SRC20 smart contract with some Rust tests.
+
 
