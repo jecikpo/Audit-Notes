@@ -19,6 +19,8 @@ Some notes on web3 audits
 - [Fuel Explorer](https://app.fuel.network/)
 - [Fuel Bridge](https://app.fuel.network/bridge?from=eth&to=fuel)
 - [Testnet Faucet](https://faucet-testnet.fuel.network/)
+- [Fuel Disassembler](https://github.com/otrho/fuel-dis)
+- [Fuel Debugger](https://github.com/fuellabs/fuel-debugger)
 
 ## JecikPo's tutorials
 
