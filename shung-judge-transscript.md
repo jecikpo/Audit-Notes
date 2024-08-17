@@ -2,6 +2,13 @@
 
 The link to the original tweet [Good Luck to the Judge](https://x.com/shunduquar/status/1824480593331015839)
 
+EIPs and terms mentioned:
+- [EIP-3607: Reject transactions from senders with deployed code](https://eips.ethereum.org/EIPS/eip-3607)
+- [EIP-684: Revert creation in case of collision](https://eips.ethereum.org/EIPS/eip-684)
+- [EIP-6780: SELFDESTRUCT only in same transaction](https://eips.ethereum.org/EIPS/eip-6780)
+- ecmul and ecadd - [EIP-196: Precompiled contracts for addition and scalar multiplication on the elliptic curve alt_bn128](https://eips.ethereum.org/EIPS/eip-196)
+- [Pollard's rho algorithm](https://en.wikipedia.org/wiki/Pollard's_rho_algorithm)
+
 *Edgeworth*: A malicious user can leverage create2 hash collision to steal funds from the contract. They can generate an EOA create2 pair with the same address. After deploying the contract and attracting funds they can use the EOA to rug it.
 
 [Objection!]
