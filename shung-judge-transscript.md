@@ -1,4 +1,4 @@
-# Shung's judging conversation transscript
+# Shung's judging conversation transcript
 
 The link to the original tweet [Good Luck to the Judge](https://x.com/shunduquar/status/1824480593331015839)
 
