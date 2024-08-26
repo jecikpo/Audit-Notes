@@ -21,9 +21,11 @@ Some notes on web3 audits
 - [Testnet Faucet](https://faucet-testnet.fuel.network/)
 - [Fuel Disassembler](https://github.com/otrho/fuel-dis)
 - [Fuel Debugger](https://github.com/fuellabs/fuel-debugger)
+- [Sway Static Analyzer](https://github.com/ourovoros-io/sway-analyzer) and an [article explaining usage](https://medium.com/@angelos404/mastering-sway-analyzer-27379d7903db).
 
 ## JecikPo's tutorials
 
 - [SRC20 Tutorial](https://github.com/jecikpo/Tutorial-Fuel-SRC20) - Step-by-step tutorial on how to create a simple SRC20 smart contract with some Rust tests.
+- [UniswapV2 in Sway Tutorial](https://github.com/jecikpo/Tutorial-Sway-UniswapV2) - Tutorial explaining how to build a UniswapV2 clone (FuniswapV2) in Sway on Fuel.
 
 
