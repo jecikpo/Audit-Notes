@@ -23,6 +23,10 @@ Some notes on web3 audits
 - [Fuel Debugger](https://github.com/fuellabs/fuel-debugger)
 - [Sway Static Analyzer](https://github.com/ourovoros-io/sway-analyzer) and an [article explaining usage](https://medium.com/@angelos404/mastering-sway-analyzer-27379d7903db).
 
+## JecikPo's Notes
+
+- [FuelVM Storage](https://github.com/jecikpo/Audit-Notes/blob/main/Sway-storage.md) - Notes on Storage Design in FuelVM.
+
 ## JecikPo's tutorials
 
 - [SRC20 Tutorial](https://github.com/jecikpo/Tutorial-Fuel-SRC20) - Step-by-step tutorial on how to create a simple SRC20 smart contract with some Rust tests.
