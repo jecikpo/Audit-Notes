@@ -176,5 +176,45 @@ Our struct now occupies two slots, where the second slot `key` is incremented by
 method demostrated above. We can use structs to pack our storage densely and hence use less slots.
 
 ## `StorageMap` and `field_id`
+`StorageMap` is a type which allows you to store contents in Sway storage that are addressable using
+a defined key. It is similar to Solidity `mapping` concept. An example declaration of a `StorageMap`
+that will use tuple `(Identity, AssetId)` to address value of type `u64`:
+```rust
+storage {
+    balance_of: StorageMap<(Identity, AssetId), u64> = StorageMap {},
+}
+```
 
-[TODO]
+To access values of the `StorageMap` we would use the `insert()` and `get()` methods. An example insertion
+would look like this:
+```rust
+storage.balance_of.insert((address, asset), new_balance);
+```
+This is pretty strightforward. Regarding reading it is a bit more complex, because storage
+slots in Sway when not initialized behave differently during reading. The low level function `read()` as 
+defined [here](https://github.com/FuelLabs/sway/blob/2538442a67f893f2e878214ba37a11b51f4ed41e/sway-lib-std/src/storage/storage_api.sw#L89) returns `Option<T>`.
+When the slot was previously written to, it will return `Some(value)`, but if it wasn't it will be `None`.
+This approach is propagated up to the `StorageMap.get()` hence we need to handle it e.g. in the following way:
+```rust
+let status = storage.balance_of.get((account, asset)).try_read();
+match status {
+    Option::Some(balance) => balance,
+    Option::None => 0,
+}
+```
+Now, when we `insert()` data, into which slot does it go? In the end the `StorageMap` declaration `balance_of`
+has its own slot which is calculated as shown in the previous sections. Yet here we can include multiple 
+keys with different values into the `StorageMap`. Obviously this needs to go into different slots. 
+Let's see how `insert()` is [implemented](https://github.com/FuelLabs/sway/blob/2538442a67f893f2e878214ba37a11b51f4ed41e/sway-lib-std/src/storage/storage_map.sw#L50):
+```rust
+#[storage(read, write)]
+pub fn insert(self, key: K, value: V)
+where
+    K: Hash,
+{
+    let key = sha256((key, self.field_id()));
+    write::<V>(key, 0, value);
+}
+```
+So we are using the `field_id()` and `key` to compute a hash which will determine our storage slot. `field_id()`
+is calculated similarly to the `slot`, details in the [PR](https://github.com/FuelLabs/sway/pull/6064) and the Sway compiler code [here](https://github.com/FuelLabs/sway/blob/1bda0e8c9862d04e230abee09f17607c11d9d152/sway-core/src/ir_generation/storage.rs#L33).
