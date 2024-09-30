@@ -13,6 +13,7 @@ Some notes on web3 audits
 
 - [Fuel VM Binary analysis](https://jtriley.substack.com/p/fuel-vm-binary-analysis) by jtriley.eth
 - [Fuel Virtual Machine Architecture](https://substack.com/home/post/p-83088192) by jtriley.eth
+- [Introduction to the Sway Language Security Audit](https://exvul.com/introduction-to-the-sway-language-security-audit/) by ExVul
 
 ## Tools
 
