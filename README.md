@@ -15,6 +15,7 @@ Some notes on web3 audits
 - [Fuel Virtual Machine Architecture](https://substack.com/home/post/p-83088192) by jtriley.eth
 - [Introduction to the Sway Language Security Audit](https://exvul.com/introduction-to-the-sway-language-security-audit/) by ExVul
 - [A detailed write-up of a solo critical vulnerability discovered during the Immunefi Attackathon](https://github.com/minato7namikazi/Fuel-Blockchain-Critical-Vulnerability) by [Minato7namikazi](https://x.com/minato7namikazi)
+- [Exploring the FuelVM](https://medium.com/blockchain-capital-blog/exploring-the-fuelvm-86cf9ccdc159) by Ryan Sproule
 
 ## Tools
 
