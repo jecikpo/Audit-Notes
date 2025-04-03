@@ -35,4 +35,6 @@ Some notes on web3 audits
 - [SRC20 Tutorial](https://github.com/jecikpo/Tutorial-Fuel-SRC20) - Step-by-step tutorial on how to create a simple SRC20 smart contract with some Rust tests.
 - [UniswapV2 in Sway Tutorial](https://github.com/jecikpo/Tutorial-Sway-UniswapV2) - Tutorial explaining how to build a UniswapV2 clone (FuniswapV2) in Sway on Fuel.
 
+## Solana Resources
 
+- [Ottersec Reports](https://ottersec.notion.site/Sampled-Public-Audit-Reports-a296e98838aa4fdb8f3b192663400772) - A great collection of public reports by OtterSec
