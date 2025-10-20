@@ -1,7 +1,7 @@
 # Audit Notes
 Some notes on web3 audits
 
-## Fuel and Sway Resources
+# Fuel and Sway Resources
 
 - Main Fuel [documentation resource](https://docs.fuel.network/docs/intro/what-is-fuel/)
 - [The Sway Book](https://fuellabs.github.io/sway/v0.60.0/book/index.html)
@@ -35,6 +35,22 @@ Some notes on web3 audits
 - [SRC20 Tutorial](https://github.com/jecikpo/Tutorial-Fuel-SRC20) - Step-by-step tutorial on how to create a simple SRC20 smart contract with some Rust tests.
 - [UniswapV2 in Sway Tutorial](https://github.com/jecikpo/Tutorial-Sway-UniswapV2) - Tutorial explaining how to build a UniswapV2 clone (FuniswapV2) in Sway on Fuel.
 
-## Solana Resources
+# Solana Resources
 
 - [Ottersec Reports](https://ottersec.notion.site/Sampled-Public-Audit-Reports-a296e98838aa4fdb8f3b192663400772) - A great collection of public reports by OtterSec
+- [Token-2022 Security Best Practices - Part 1](https://blog.offside.io/p/token-2022-security-best-practices-part-1) - Mint and Token Account by Offsite Labs
+- [Token-2022 Security Best Practices - Part 2](https://blog.offside.io/p/token-2022-security-best-practices-part-2) - Extensions by Offsite Labs
+
+## Solana Internals
+
+- [Under the Hood of Solana Program Execution From Rust Code to SBF Bytecode](https://ubermensch.blog/under-the-hood-of-solana-program-execution-from-rust-code-to-sbf-bytecode#heading-during-execution-vm-enforcement) - Basic info on SBF, compilation and Solana Bytecode by Farouk ELALEM
+- [The Solana eBPF Virtual Machine](https://www.anza.xyz/blog/the-solana-ebpf-virtual-machine) by Joe Caulfield
+- [Solana Bytecode / Instruction Set Architecture](https://github.com/solana-labs/rbpf/blob/57139e9e1fca4f01155f7d99bc55cdcc25b0bc04/doc/bytecode.md)
+
+## Solana Fuzzing
+
+- [A Practical Guide to Fuzzing Solana Smart Contracts with Honggfuzz](https://zokyo.io/blog/guide-to-fuzzing-solana/) - by Zokyo
+
+## Solana Reverse Engienering
+
+- [Reverse Engineering Solana with Binary Ninja](https://osec.io/blog/2022-08-27-reverse-engineering-solana) - An introduction to our open-source Binary Ninja plugin for blackbox Solana program analysis along with an executive reference to the Solana runtime by Harrison Green (Aug 27, 2022)
