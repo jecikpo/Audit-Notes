@@ -26,6 +26,10 @@ Some notes on web3 audits
 - [Fuel Debugger](https://github.com/fuellabs/fuel-debugger)
 - [Sway Static Analyzer](https://github.com/ourovoros-io/sway-analyzer) and an [article explaining usage](https://medium.com/@angelos404/mastering-sway-analyzer-27379d7903db).
 
+## Math
+
+- [The Security Researcher’s Guide to Mathematics](https://muellerberndt.medium.com/the-security-researchers-guide-to-mathematics-000dc0c98a0f) by Bernhard Mueller
+
 ## JecikPo's Notes
 
 - [FuelVM Storage](https://github.com/jecikpo/Audit-Notes/blob/main/Sway-storage.md) - Notes on Storage Design in FuelVM.
@@ -56,6 +60,12 @@ Some notes on web3 audits
 
 - [Reverse Engineering Solana with Binary Ninja](https://osec.io/blog/2022-08-27-reverse-engineering-solana) - An introduction to our open-source Binary Ninja plugin for blackbox Solana program analysis along with an executive reference to the Solana runtime by Harrison Green (Aug 27, 2022)
 - [Reverse Engineering Solana Programs: A Practical Guide to Unpacking Closed-Source BPF](https://medium.com/@evansaboladed/reverse-engineering-solana-programs-a-practical-guide-to-unpacking-closed-source-bpf-6994c1eaa33c) - Tools, Techniques, and Challenges for Analyzing On-Chain Solana Logic by DeepW
+
+## Solana Security Toolbox
+
+- [sol-azy](https://github.com/FuzzingLabs/sol-azy) - a modular CLI toolchain for static analysis and reverse engineering of Solana sBPF programs.
+It supports disassembly, control flow analysis, and custom Starlark-based rule evaluation by FuzzingLabs
+- [Solana Static Analyzer](https://github.com/scab24/Solana_Static_Analyzer) - A powerful static analysis tool for Solana smart contracts written in Rust. Detect vulnerabilities, security issues, and code quality problems in your Solana/Anchor projects by scab24
 
 # Hyperliquid Resources
 
